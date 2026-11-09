@@ -2,20 +2,19 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>오늘의 타로 운세</title>
+    <title>절대 통과할 수 없는 타로 테트리스</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="tarot-container">
-        <h1>오늘의 타로 운세</h1>
-        <p>카드를 한 장 골라주세요.</p>
+    <div class="game-container">
+        <h1>💀 지옥의 타로 테트리스 💀</h1>
+        <p>현재 스테이지: <span id="stage">1</span> 단계 (클리어 불가능)</p>
         
-        <!-- 카드들이 놓일 공간 -->
-        <div class="card-list" id="card-list"></div>
-
-        <!-- 선택된 카드 상세 결과 -->
-        <div id="result-box"></div>
+        <canvas id="tetris" width="240" height="400"></canvas>
+        
+        <div id="score-board">점수: <span id="score">0</span></div>
+        <div id="hell-msg">"과연 이 스테이지를 통과할 수 있을까?"</div>
     </div>
 
     <script src="script.js"></script>
